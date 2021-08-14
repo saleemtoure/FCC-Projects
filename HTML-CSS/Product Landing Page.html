@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Landing Page</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+        
+        html{
+            font-family: "Titillium Web",sans-serif ;
+            background-color: rgb(94, 76, 114);
+        }
+        #video-div{
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+        }
+        #video{
+            border-color: rgb(46, 13, 90);
+            box-shadow:0px 3px 2px 3px black;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #Prices{
+            display:flex;
+            height: 300px;
+            width: 100%;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+        .price-box:hover{
+            box-shadow:0px 0px 5px white;
+            transform:scale(1.02) ;
+        }
+        header{
+            width: 100%;
+            margin:auto ;
+            display: flex;
+            position: fixed;
+            z-index: 1;
+        }
+        #nav-bar{
+            background-color: rgb(46, 13, 90);
+            width: 100%;
+            margin: auto;
+            margin-left: 100px;
+            overflow: auto;
+            flex:1;
+            flex-wrap: wrap;
+        }
+        /* broken
+        #pack-pictures{
+            position:absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        .RonaldoMessi{
+            transform: scale(0.6);
+        }*/
+        img{
+            display: none;
+        }/*since it doesnt work*/
+        .box-text{
+            color: white;
+            text-align: center;
+            position: absolute;
+            top:0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-shadow: 1px 1px 1px black;
+        }
+        .packInfo{
+            color: white;
+            text-align: center;
+            padding-top: 20%;
+            text-shadow: 1px 1px 1px black;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        li{
+            float:left
+            
+        }
+
+        #header-img{
+            width:109px;
+            position: absolute;
+            display: inline-block;
+            
+        }
+        nav a{
+            width:91px ;
+            display: block;
+            padding: 29px 7px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+
+            
+        }
+        a:hover{
+            color:white;
+            background-color:rgb(118, 17, 128);
+        }
+        #newsletter-form{
+            margin-top: 200px;
+            padding-bottom: 50px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+
+        }
+        .price-box{
+            background-color: rgb(120, 104, 145);
+            border:2px solid rgb(46, 13, 90);
+            border-radius: 16px;
+            margin-top: 10px;
+            width: 25%;
+            height: 450px;
+            position: relative;
+            overflow: hidden;
+        }
+        /* doesnt work
+        .Avengers{
+            display: block;
+            position: absolute;
+        }*/
+        @media (min-width: 500px) and (max-width: 600px) {
+        #pack-pictures {
+          display: none;
+        }
+ }
+
+@media (min-width: 700px) and (max-width: 1000px) {
+        #pack-pictures {
+          display: block;
+        }
+
+ }
+    </style>
+</head>
+<body>
+
+<section id="header-img-nav">
+    <header id="header" class="">
+        <img id="header-img" src="https://cdn.dribbble.com/users/230124/screenshots/6923871/wip.png">
+        <nav id="nav-bar">
+                <ul>
+                    <li><a href="#Home" class="nav-link">Home</a></li>
+                    <li><a href="#Catalogue" class="nav-link">Catalogue</a></li>
+                    <li><a href="#Prices" class="nav-link">Prices</a></li>
+                    <li><a href="#FAQ" class="nav-link">FAQ</a></li>
+                    <li><a href="#AboutUs" class="nav-link">About Us</a></li>
+                </ul>
+        </nav>
+    </header>
+</section>
+
+<section id="video-prices-form">
+    <div id="video-div">
+     <iframe name="Youtube Video"src="https://www.youtube.com/embed/1_zzCfbMWG4" id="video" controls></iframe> 
+    </div>
+<br>
+    <div id="Prices">
+        <div id="lite-box" class="price-box">
+            <h4 class="box-text">Lite Pack</h4>
+            <p class="packInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem libero, vulputate eu eros quis, condimentum congue magna. Nam sed pharetra libero. Quisque eget iaculis sem. Curabitur at interdum orci. Duis ac placerat dolor. Nullam sem enim, pretium sed dignissim quis, suscipit vitae tortor. Fusce et nisl eu nulla gravida feugiat.</p>
+           <img id="pack-pictures" src="https://static.wikia.nocookie.net/tmnt-x-pokemon/images/7/72/Steven.png/revision/latest?cb=20180713133334" width="55%">
+        </div>
+        <div id="standard-box" class="price-box">
+            <h4 class="box-text">Standard Pack</h4>
+            <p class="packInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem libero, vulputate eu eros quis, condimentum congue magna. Nam sed pharetra libero. Quisque eget iaculis sem. Curabitur at interdum orci. Duis ac placerat dolor. Nullam sem enim, pretium sed dignissim quis, suscipit vitae tortor. Fusce et nisl eu nulla gravida feugiat.</p>
+            <img id="pack-pictures" class="RonaldoMessi" src="https://www.footyrenders.com/render/Cristiano-Ronaldo-Lionel-Messi-2-390x264.png">
+        </div>
+        <div id="deluxe-box" class="price-box">
+            <h4 class="box-text">Deluxe Pack</h4>
+            <p class="packInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem libero, vulputate eu eros quis, condimentum congue magna. Nam sed pharetra libero. Quisque eget iaculis sem. Curabitur at interdum orci. Duis ac placerat dolor. Nullam sem enim, pretium sed dignissim quis, suscipit vitae tortor. Fusce et nisl eu nulla gravida feugiat.</p>
+            <img id="pack-pictures" class="Avengers" src="https://www.pngkit.com/png/full/431-4312393_os-vingadores-personagens-png-avengers.png">
+        </div>
+
+    </div>
+<br>
+    <div id="newsletter-form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+            <div id="newsletter">
+                <h4>Would you like to sign up for our weekly newsletter? </h4>
+                   <label for="email"></label>
+                    <input id="email" type="email" name="email" placeholder="Your Email">
+                    <input type="submit" id="submit" value="Submit"></input>
+            </div>
+        </form>
+    </div>  
+
+</section>
+<section id="footer">
+
+</section>
+</body>
+</html>
+

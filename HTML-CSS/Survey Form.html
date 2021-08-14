@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form FCC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<style>
+    div{
+        font-family: "Rubik";
+        color: white;
+    }
+    #submit{
+        height:fit-content ;
+        text-align: center;
+        width: 65px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    #textarea{
+        max-width: 100%;
+        min-height: 55%;
+        min-width: 40%;
+    }
+    .gender{
+        margin-top:-10px;
+        margin-bottom:-20px ;
+    }
+    .bakingClub{
+        margin-top:-10px;
+    }
+    #number{
+        width: 43%;
+    }
+    #dropdown{
+        color:gray;
+    }
+    #background{
+        background-color: rgb(107, 255, 8);
+        background-image:url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_1011792694_397146.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        height: 120%;
+        width: auto;
+    }
+    body, html{
+        height: 110%;
+        margin: 0;
+    }
+    .title-box{
+        text-align:center;
+        padding: 5%;
+        position: absolute;
+        top:10px;
+        left: 15%;
+        right: 15%;
+        background-color: rgba(188, 143, 143,0.9);
+        max-width:400px;
+        max-height: 400px;
+        margin-left:auto;
+        margin-right: auto;
+
+    }
+    #title-text{
+        text-align: center;
+        top: auto;
+        margin-top: 10px;
+        font-family:"Rubik";
+    }
+    .form-box{
+        text-align:center;
+        padding: 2%;
+        position: absolute;
+        top:30%;
+        left: 15%;
+        right: 15%;
+        background-color: rgba(188, 143, 143,0.9);
+        max-width:450px;
+        height: fit-content;
+        margin-left:auto;
+        margin-right: auto;
+ }
+</style>
+
+</head>
+
+<body>
+<div id="background">
+
+<section id="title-text" class="form-box"> 
+    <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey to improve our workplace. Thanks for your time!</p>
+</section>
+
+<div class="form-box">
+ <section id="survey">
+    <form id="survey-form">
+
+        <label label id="name-label" for="name" >Name</label>
+        <h4>Name</h4>
+        <input 
+               id="name"
+               name="name"
+               type="text"
+               placeholder="Your Name" 
+        required> 
+       <br>
+       
+       <label id="email-label" for="email" >Email</label>
+       <h4>Email</h4>
+        <input
+               id="email"
+               name="email"
+               type="email"
+               placeholder="Your Email"
+               required>
+       <br>
+
+       <label id="number-label" for="number">       <h4>Age</h4></label>
+        <input
+               id="number" 
+               name="age"
+               type="number"
+               placeholder="Your Age (optional)"
+               min="0"
+               max="99"
+               >
+       <br>
+    
+       <h4>How often are you in touch with a supervisor?:</h4> <label for="dropdown">
+        <select id="dropdown" name="dropdown" required>
+         <option ></option>
+         <option value="">Select the description that fits you:</option>
+         <option value="EveryDay">Every day</option>
+         <option value="EveryWeek">Every week</option>
+         <option value="OnceAMonth">Once a month</option>
+         <option value="Every6thMonth">Every 6th month</option>
+         <option value="OnceAYear">Once a year</option>
+        </select>
+       <h4>Gender</h4>
+       <div class="gender" >
+        <label for="male">
+            <input 
+            type="radio" 
+            name="gender" 
+            value="male" 
+            id="male"
+            required>Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" id="female">Female
+        </label>
+    </div>
+    <br>
+    <h4>Would you like to join our baking club (Leave empty if no)</h4>
+    <div class="bakingClub">
+        <label for="yes">
+         <input type="checkbox" name="yesBaking" value="Yes" id="yes">Yes
+        </label>
+        <label for="Agree">
+            <input type="checkbox" name="yesBaking" value="Agree" id="Agree">I agree to the <a href="#">terms and conditions</a>
+        </label>
+    </div>
+    <br>
+
+       <textarea id="textarea"name="textarea" placeholder="Any additional feedback?"></textarea>
+   
+    <br>
+
+       <button type="submit" placeholder="Submit" id="submit" required value="Submit">Submit</button>
+
+
+    </form>
+   </section>
+</div>
+
+</div>
+
+</body>
+</html>

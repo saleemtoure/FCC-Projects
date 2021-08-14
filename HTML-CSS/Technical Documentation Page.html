@@ -1,0 +1,256 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="no">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Technical Documentation Page</title>
+		<style>
+			:root {
+				--background-black: rgb(25, 31, 34);
+				--border-blue: 2px solid rgb(78, 121, 201);
+			}
+			* {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			html {
+				background-color: rgb(31, 41, 46);
+			}
+			#navbar {
+				background-color: var(--background-black);
+				position: fixed;
+				float: left;
+				height: 100%;
+				top: 0;
+				left: 0;
+				width: 25%;
+				border-right: var(--border-blue);
+				text-align: center;
+			}
+
+			.nav-link {
+				color: white;
+				text-decoration: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: space-around;
+				padding: 13% 0px;
+				border-bottom: 1px solid rgb(78, 121, 201);
+			}
+			.nav-link:hover {
+				background-color: rgb(78, 121, 201);
+			}
+			#main-doc {
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				margin-left: 26%;
+			}
+
+			.main-section:last-child {
+				padding-bottom: 40px;
+			}
+
+			header {
+				font-weight: bold;
+				color: white;
+				background-color: var(--background-black);
+				padding: 15px 7px;
+				margin-top: 10%;
+				margin-bottom: 10%;
+				border: var(--border-blue);
+				border-radius: 40px;
+			}
+			header.TopHeader {
+				margin-top: 10px;
+			}
+			header.MainHeader {
+				border: none;
+				border-bottom: var(--border-blue);
+				border-radius: 0;
+				padding: 45px 0px;
+				font-size: 1.8em;
+				text-align: center;
+				margin: 0px;
+			}
+			#main-doc ul li {
+				color: white;
+			}
+			@media screen (max-width: 768px) {
+				nav {
+					width: 100%;
+					float: none;
+					height: 200px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav id="navbar">
+			<header class="MainHeader">IOS 17 Update</header>
+
+			<a href="#What's_New" class="nav-link">What's New</a>
+
+			<a href="#New_Themes" class="nav-link">New Themes</a>
+
+			<a href="#Real_Time_Translation" class="nav-link"
+				>Real Time Translation</a
+			>
+
+			<a href="#Environmental_Recognition" class="nav-link"
+				>Environmental Recognition</a
+			>
+
+			<a href="#Privacy" class="nav-link">Privacy</a>
+		</nav>
+
+		<main id="main-doc">
+			<section class="main-section" id="What's_New">
+				<header class="TopHeader">What's New</header>
+				<p></p>
+				<ul>
+					<li>
+						<code>eksempel kode</code>
+					</li>
+					<li>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+						consectetur reprehenderit ratione neque culpa ab quis ex fuga
+						maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+						pariatur neque distinctio voluptatibus.
+					</li>
+					<li>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+						consectetur reprehenderit ratione neque culpa ab quis ex fuga
+						maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+						pariatur neque distinctio voluptatibus.
+					</li>
+				</ul>
+				<p></p>
+			</section>
+
+			<section class="main-section" id="New_Themes">
+				<header>New Themes</header>
+				<p></p>
+				<ul>
+					<li>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+						consectetur reprehenderit ratione neque culpa ab quis ex fuga
+						maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+						pariatur neque distinctio voluptatibus.
+					</li>
+					<li>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+						consectetur reprehenderit ratione neque culpa ab quis ex fuga
+						maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+						pariatur neque distinctio voluptatibus.
+					</li>
+					<li>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+						consectetur reprehenderit ratione neque culpa ab quis ex fuga
+						maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+						pariatur neque distinctio voluptatibus.
+					</li>
+				</ul>
+				<p></p>
+			</section>
+
+			<section class="main-section" id="Real_Time_Translation">
+				<header>Real Time Translation</header>
+				<p></p>
+				<ul>
+					<li>
+						<code
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Molestiae consectetur reprehenderit ratione neque culpa ab quis ex
+							fuga maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+							pariatur neque distinctio voluptatibus.</code
+						>
+					</li>
+					<li>
+						<code
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Molestiae consectetur reprehenderit ratione neque culpa ab quis ex
+							fuga maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+							pariatur neque distinctio voluptatibus.</code
+						>
+					</li>
+					<li>
+						<code
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Molestiae consectetur reprehenderit ratione neque culpa ab quis ex
+							fuga maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+							pariatur neque distinctio voluptatibus.</code
+						>
+					</li>
+				</ul>
+				<p></p>
+			</section>
+
+			<section class="main-section" id="Environmental_Recognition">
+				<header>Environmental Recognition</header>
+				<p></p>
+				<ul>
+					<li>
+						<code
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Molestiae consectetur reprehenderit ratione neque culpa ab quis ex
+							fuga maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+							pariatur neque distinctio voluptatibus.</code
+						>
+					</li>
+					<li>
+						<code
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Molestiae consectetur reprehenderit ratione neque culpa ab quis ex
+							fuga maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+							pariatur neque distinctio voluptatibus.</code
+						>
+					</li>
+					<li>
+						<code
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Molestiae consectetur reprehenderit ratione neque culpa ab quis ex
+							fuga maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+							pariatur neque distinctio voluptatibus.</code
+						>
+					</li>
+				</ul>
+				<p></p>
+			</section>
+
+			<section class="main-section" id="Privacy">
+				<header>Privacy</header>
+				<p></p>
+				<ul>
+					<li>
+						<code
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Molestiae consectetur reprehenderit ratione neque culpa ab quis ex
+							fuga maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+							pariatur neque distinctio voluptatibus.</code
+						>
+					</li>
+					<li>
+						<code
+							>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Molestiae consectetur reprehenderit ratione neque culpa ab quis ex
+							fuga maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+							pariatur neque distinctio voluptatibus.</code
+						>
+					</li>
+					<li>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+						consectetur reprehenderit ratione neque culpa ab quis ex fuga
+						maiores! Rem minus eveniet aliquid, sapiente adipisci dolores
+						pariatur neque distinctio voluptatibus.
+					</li>
+				</ul>
+				<p></p>
+			</section>
+		</main>
+	</body>
+</html>
