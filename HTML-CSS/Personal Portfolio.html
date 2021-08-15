@@ -6,46 +6,154 @@
 		<meta charset="UTF-8" />
 		<title>Personal Portfolio Page</title>
 		<style>
-			navbar {
-				position: fixed;
+			:root {
+				--pastel-Yellow: #f7f6cf;
+				--pastel-Turquoise: #b6d8f2;
+				--pastel-Linen: #f4cfdf;
+				--pastel-steel-Blue: #5784ba;
+				--pastel-sky-Blue: #9ac8eb;
 			}
-			#welcome-section {
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			html,
+			body {
 				height: 100%;
+			}
+
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				position: fixed;
+				background-color: var(--pastel-steel-Blue);
+				box-shadow: 1px 1px 3px black;
+			}
+			li {
+				float: right;
+			}
+			li a {
+				display: block;
+				color: var(--pastel-Yellow);
+				text-align: center;
+				padding: 30px 36px;
+				text-decoration: none;
+			}
+			li a:hover {
+				background-color: var(--pastel-Linen);
+				color: var(--pastel-Yellow);
+			}
+
+			#welcome-section {
+				width: 100%;
+				height: 100vh;
+				background-color: var(--pastel-Linen);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#projects {
+				width: 100%;
+				height: 100vh;
+				background-color: var(--pastel-Turquoise);
+			}
+			#contacts-section {
+				width: 100%;
+				height: 20vh;
+				background-color: var(--pastel-sky-Blue);
+			}
+			h1 {
+				font-size: 100px;
+				font-weight: bolder;
+				color: var(--pastel-Yellow);
+				font-family: Arial, Helvetica, sans-serif;
+				text-shadow: 0px 0px 10px black;
+			}
+			h2 {
+				font-size: 20px;
+				color: var(--pastel-Yellow);
+				font-family: Arial, Helvetica, sans-serif;
+				text-shadow: 0px 0px 10px black;
+				text-align: center;
+				padding-top: 15px;
+				padding-bottom: 12px;
+				border-bottom: 2px solid var(--pastel-Yellow);
+			}
+			.h1-over-under {
+				font-size: 45px;
 			}
 			@media screen {
 			}
 		</style>
 	</head>
 	<body>
-		<!-- Nav Bar
-    User Story #6: My portfolio should have a navbar with an id of navbar.
+		<nav id="navbar">
+			<ul>
+				<li class="list">
+					<a href="Contact-Info" class="link">Contact</a>
+				</li>
+				<li class="list">
+					<a href="Projects" class="link">Projects</a>
+				</li>
+				<li>
+					<a href="About" class="link">About</a>
+				</li>
+			</ul>
+		</nav>
 
-    User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
-    User Story #11: The navbar should always be at the top of the viewport.
-    -->
-		<!-- Welcome Section
-    User Story #1: My portfolio should have a welcome section with an id of welcome-section.
+		<section id="welcome-section">
+			<h1 class="h1-over-under">Hi</h1>
+			<h1>I'm Saleem</h1>
+			<h1 class="h1-over-under">An aspiring coder</h1>
+		</section>
 
-    User Story #2: The welcome section should have an h1 element that contains text.
+		<section id="projects">
+			<h2>Some of the pages i have coded:</h2>
 
-    User Story #10: The height of the welcome section should be equal to the height of the viewport.
+			<div class="gallery">
+				<a href="http://" target="_blank">
+					<img src="" alt="" srcset="" />
+				</a>
+				<div class="desc"></div>
+			</div>
 
-    
-    <section id="welcome-section">
+			<div class="gallery">
+				<a href="http://" target="_blank">
+					<img src="" alt="" srcset="" />
+				</a>
+				<div class="desc"></div>
+			</div>
 
-    </section> 
-    -->
+			<div class="gallery">
+				<a href="http://" target="_blank">
+					<img src="" alt="" srcset="" />
+				</a>
+				<div class="desc"></div>
+			</div>
+
+			<div class="gallery">
+				<a href="http://" target="_blank">
+					<img src="" alt="" srcset="" />
+				</a>
+				<div class="desc"></div>
+			</div>
+		</section>
+
 		<!-- Projects Section
-
-        User Story #3: My portfolio should have a projects section with an id of projects.
 
         User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
 
         User Story #5: The projects section should contain at least one link to a project. (on github)
     -->
+		<section id="contacts-section"></section>
 		<!--Contacts Section
         User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
-    -->
-		https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+		legg til back2top greie
+    	-->
+		<script src="//cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
